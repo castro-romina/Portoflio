@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+ background-color: #E3F2FD;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0D47A1;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.section-marks::before,
+.section-marks::after {
+  content: "+";
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: rgba(13, 71, 161, 0.35);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.section-marks::before {
+  top: 20px;
+  left: 20px;
+}
+
+.section-marks::after {
+  bottom: 20px;
+  right: 20px;
+}
+
+.section-marks-habilidades {
+    background-color:#0D47A1;
+}
+
+/* Tarjetas de categoría de habilidades */
+.skill-card {
+  background-color: #90CAF9;
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.skill-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #0D47A1;
+  margin-bottom: 1.1rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #0D47A1;
+  font-size: 0.95rem;
+}
+
+.skill-icon {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: #2196F3;
+}
+
+/* Tarjetas de proyecto */
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(33, 150, 243, 0.25);
+  border-radius: 10px;
+  padding: 1.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(13, 71, 161, 0.18);
+}
+ 
+.tech-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: rgba(33, 150, 243, 0.12);
+  color: #0D47A1;
+}
+ 
+/* Links de las tarjetas de proyecto */
+.project-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2196F3;
+  transition: color 0.2s ease;
+}
+ 
+.project-link:hover {
+  color: #0D47A1;
+  text-decoration: underline;
+}
+
+/* Botones de las tarjetas de proyecto */
+.project-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+ 
+.project-btn-primary {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+ 
+.project-btn-primary:hover {
+  background-color: #0D47A1;
+}
+ 
+.project-btn-secondary {
+  border: 1px solid #2196F3;
+  color: #0D47A1;
+}
+ 
+.project-btn-secondary:hover {
+  background-color: rgba(144, 202, 249, 0.3);
+}
+
+.tech-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background-color: rgba(144, 202, 249, 0.35);
+  color: #0D47A1;
+}
+
+.cert-item {
+  border-left: 2px solid rgba(33, 150, 243, 0.4);
+  padding-left: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.75rem;
+  border: 1px solid rgba(144, 202, 249, 0.3);
+  border-radius: 8px;
+  min-width: 200px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-link:hover {
+  background-color: rgba(144, 202, 249, 0.1);
+  border-color: rgba(144, 202, 249, 0.6);
+}

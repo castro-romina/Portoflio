@@ -1,15 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Castro Romina</title>
+        <link rel="icon" type="image/png" href="./assets/icono/portafolio.png" />
 
-    <h1>Welcome to My Portfolio</h1>
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <p>Hi, I'm [Your Name], a passionate web developer with a love for creating beautiful and functional websites. This portfolio showcases my skills, projects, and experience in the field of web development.</p>
-</body>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                        paper: '#E3F2FD',
+                        skyline: '#90CAF9',
+                        blueprint: '#2196F3',
+                        ink: '#0D47A1'
+                        },
+                        fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        body: ['Inter', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        </script>
+        
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="bg-paper text-ink font-body antialiased" >
+        
+        <header class="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur border-b border-blueprint/20">
+            <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+                <a href="#inicio" class="font-display font-semibold text-lg tracking-tight">
+                    Portfolio Castro Romina<span class="text-blueprint"></span>
+                </a>
+        
+                <ul class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider">
+                    <li><a href="#proyectos" class="hover:text-blueprint transition-colors">Proyectos</a></li>
+                    <li><a href="#habilidades" class="hover:text-blueprint transition-colors">Habilidades</a></li>
+                    <li><a href="#certificaciones" class="hover:text-blueprint transition-colors">Certificaciones</a></li>
+                    <li><a href="#contacto" class="hover:text-blueprint transition-colors">Contacto</a></li>
+                </ul>
+
+                <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" class="md:hidden flex flex-col gap-1.5 p-2">
+                    <span class="w-6 h-0.5 bg-ink"></span>
+                    <span class="w-6 h-0.5 bg-ink"></span>
+                    <span class="w-6 h-0.5 bg-ink"></span>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <ul id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-6 pb-6 font-mono text-sm uppercase tracking-wider">
+                <li><a href="#proyectos" class="block py-1">Proyectos</a></li>
+                <li><a href="#habilidades" class="block py-1">Habilidades</a></li>
+                <li><a href="#certificaciones" class="block py-1">Certificaciones</a></li>
+                <li><a href="#contacto" class="block py-1">Contacto</a></li>
+            </ul>
+        </header>
+      
+        <section id="inicio" class="section-marks relative pt-40 pb-24 px-6 overflow-hidden">
+            <div class="max-w-3xl mx-auto text-center">
+            
+                <div class="relative w-40 h-40 mx-auto mb-8">
+                    <div class="absolute -inset-2 rounded-full border border-dashed border-blueprint/40"></div>
+                    <img
+                    src="./assets/img/foto-perfil.jpg"
+                    alt="Foto de perfil"
+                    class="w-40 h-40 rounded-full object-top border-4 border-blueprint/30 shadow-lg shadow-blueprint/10"
+                    />
+                </div>
+            
+                <h1 class="font-display font-bold text-4xl md:text-5xl tracking-tight text-ink">
+                    Castro Romina
+                </h1>
+                <p class="font-display text-lg md:text-xl text-blueprint mt-3">
+                    Desarrolladora Web Fullstack · Estudiante de Licenciatura en Sistemas 
+                </p>
+                <p class="mt-5 text-ink/70 leading-relaxed max-w-xl mx-auto">
+                    Soy estudiante de 2° año de la Licenciatura en Sistemas en la Universidad Nacional de Lanús (UNLa), 
+                    complementando mi formación con el programa Full Stack en Fundación Pescar.                                                                                                                                                                                                                       
+                    Me defino como alguien comprometida, responsable, adaptable, resiliente y con buena comunicación. Disfruto tanto del 
+                    trabajo en equipo como de los desafíos individuales.
+                </p>
+
+                <!-- Botones de navegacion rapida -->
+                <div class="flex flex-wrap items-center justify-center gap-3 mt-9">
+                    <a href="./assets/cv/CASTRO ROMINA - CV.pdf" target="_blank" rel="noopener"
+                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
+                        Ver CV
+                    </a>
+                    <a href="#proyectos" rel="noopener"
+                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
+                        Proyectos
+                    </a>
+                    <a href="#habilidades " rel="noopener"
+                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors"> 
+                        Habilidades técnicas
+                    </a>
+                    <a href="#certificaciones" rel="noopener"
+                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
+                        Certificaciones
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink">
+            <div class="max-w-4xl mx-auto">
+                <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Habilidades técnicas</p>
+            
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Frontend</h3>
+                        <ul class="space-y-2.5">
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>HTML5</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>CSS3</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>JavaScript</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>ReactJS</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Tailwind CSS</li>
+                        </ul>
+                    </div>
+            
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Backend</h3>
+                        <ul class="space-y-2.5">
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Python</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>NodeJS</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>C ++</li>
+                        </ul>
+                    </div>
+            
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Base de datos</h3>
+                        <ul class="space-y-2.5">
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>MongoDB</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>MySQL</li>
+                        </ul>
+                    </div>
+            
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Tools</h3>
+                        <ul class="space-y-2.5">
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Git &amp; GitHub</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>VS Code</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Vercel</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Notion</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Trello</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Data Studio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-skyline/30">
+            <div class="max-w-5xl mx-auto">
+                <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Mis Proyectos</p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            
+                    <!-- MyPet -->
+                    <article class="project-card">
+                        <h3 class="font-display font-semibold text-lg mb-1.5">MyPet</h3>
+                        <p class="text-ink/60 text-sm leading-snug mb-3">
+                            Plataforma web para la gestión integral de la salud de mascotas en Buenos Aires. Conecta dueños con veterinarias, centraliza el historial clínico y permite reservar y pagar turnos online.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MercadoPago</span>
+                            <span class="tech-tag">Cloudinary</span>
+                            <span class="tech-tag">Google Maps API</span>
+                            <span class="tech-tag">Claude AI</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <a href="https://my-pet-sable.vercel.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
+                            <a href="https://github.com/proyecto-final-pescar/app-sistemas" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        </div>
+                    </article>
+            
+                    <!-- MatchJob -->
+                    <article class="project-card">
+                        <h3 class="font-display font-semibold text-lg mb-1.5">MatchJob</h3>
+                        <p class="text-ink/60 text-sm leading-snug mb-3">
+                            Conecta profesionales de oficios como electricistas y carpinteros con quienes necesitan sus servicios. Incluye login, búsqueda con filtros por ubicación y rubro, y valoración por estrellas.
+                        </p>
+                        <p class="demo-credentials mb-3">Demo: usuario@gmail.com · 12345</p>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <a href="https://matchjob-proyecto.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
+                            <a href="#" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        </div>
+                    </article>
+            
+                    <!-- Fintech -->
+                    <article class="project-card">
+                        <h3 class="font-display font-semibold text-lg mb-1.5">Fintech</h3>
+                        <p class="text-ink/60 text-sm leading-snug mb-3">
+                            Billetera virtual desarrollada como proyecto educativo para Educación IT. Permite registrar usuarios, gestionar cuentas y realizar depósitos y retiros desde el navegador, sin necesidad de backend.
+                        </p>
+                        <p class="demo-credentials mb-3">Admin: admin@wallet.com · admin123</p>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS Vanilla</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <a href="https://fintech-eight-sigma.vercel.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
+                            <a href="https://github.com/castro-romina/Fintech.git" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CERTIFICACIONES -->
+        <section id="certificaciones" class="section-marks relative py-24 px-6 border-t border-blueprint/20">
+            <div class="max-w-4xl mx-auto">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Fig. 04 — Certificaciones</p>
+            <h2 class="font-display font-bold text-3xl mb-10">Formación complementaria</h2>
+        
+            <ul class="space-y-5">
+                <li class="cert-item">
+                <p class="font-display font-semibold">Nombre de la certificación</p>
+                <p class="text-ink/60 text-sm font-mono">Institución · Año</p>
+                </li>
+                <li class="cert-item">
+                <p class="font-display font-semibold">Nombre de la certificación</p>
+                <p class="text-ink/60 text-sm font-mono">Institución · Año</p>
+                </li>
+            </ul>
+            </div>
+        </section>
+        
+        <!-- CONTACTO -->
+        <section id="contacto" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink text-paper">
+            <div class="max-w-3xl mx-auto text-center">
+            <p class="font-mono text-ms uppercase tracking-[0.2em] text-skyline mb-2">Mi contacto</p>
+        
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:castroromina890@gmail.com" class="contact-link">
+                <span class="font-mono text-xs uppercase tracking-wider">Email</span>
+                <span class="text-sm">castroromina890@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/romina-castro-871518263/" target="_blank" rel="noopener" class="contact-link">
+                <span class="font-mono text-xs uppercase tracking-wider">LinkedIn</span>
+                <span class="text-sm">/in/romina-castro</span>
+                </a>
+                <a href="https://wa.me/5491158907910" target="_blank" rel="noopener" class="contact-link">
+                <span class="font-mono text-xs uppercase tracking-wider">Celular</span>
+                <span class="text-sm">+54 9 11 58907910</span>
+                </a>
+            </div>
+            </div>
+        </section>
+        
+        <footer class="py-6 px-6 text-center font-mono text-[11px] uppercase tracking-wider text-ink/50 bg-paper border-t border-blueprint/20">
+            © 2026 Romina Castro — Hecho con HTML, CSS y JavaScript
+        </footer>
+        
+        <script src="script.js"></script>
+
+        
+    </body>
 </html>
