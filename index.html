@@ -278,6 +278,31 @@
                             </div>
                         </div>
                     </article>
+
+                    <!-- Cotizador -->
+                    <article class="flex gap-6 p-6 bg-skyline/10 border border-skyline/30 rounded-lg">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/bolsa-de-valores.png" alt="Cotizador Logo" class="w-24 h-24 object-contain bg-white/10 rounded p-2" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-display font-semibold text-xl text-paper mb-1">Cotizador</h3>
+                                <p class="text-paper/80 text-sm leading-snug">
+                                    Cotizador web de pólizas de seguro para hogares y comercios. El usuario selecciona el tipo de propiedad, ubicación y metros cuadrados para obtener un precio estimado.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">HTML</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">CSS</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">JavaScript</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Vanilla</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://castro-romina.github.io/Cotizador/" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver proyecto</a>
+                                <a href="https://github.com/castro-romina/Cotizador" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver repositorio</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -353,24 +378,36 @@
             </div>
         </section>
  
-        
-        <!-- CONTACTO -->
+       <!-- CONTACTO -->
         <section id="contacto" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink text-paper">
             <div class="max-w-3xl mx-auto text-center">
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-skyline mb-2">Mi contacto</p>
+            <h2 class="text-4xl sm:text-5xl font-bold mb-2">Contacto</h2>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-skyline mb-12">Mi contacto</p>
         
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="mailto:castroromina890@gmail.com" class="contact-link">
-                <span class="font-mono text-xs uppercase tracking-wider">Email</span>
-                <span class="text-sm">castroromina890@gmail.com</span>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+                <a href="mailto:castroromina890@gmail.com" class="group flex items-center gap-2 hover:text-skyline transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span class="text-sm">castroromina890@gmail.com</span>
                 </a>
-                <a href="https://www.linkedin.com/in/romina-castro-871518263/" target="_blank" rel="noopener" class="contact-link">
-                <span class="font-mono text-xs uppercase tracking-wider">LinkedIn</span>
-                <span class="text-sm">/in/romina-castro</span>
+                <a href="https://www.linkedin.com/in/romina-castro-871518263" target="_blank" rel="noopener" class="group flex items-center gap-2 hover:text-skyline transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"/>
+                    </svg>
+                    <span class="text-sm">LinkedIn</span>
                 </a>
-                <a href="https://wa.me/5491158907910" target="_blank" rel="noopener" class="contact-link">
-                <span class="font-mono text-xs uppercase tracking-wider">Celular</span>
-                <span class="text-sm">+54 9 11 58907910</span>
+                <a href="https://github.com/castro-romina" target="_blank" rel="noopener" class="group flex items-center gap-2 hover:text-skyline transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="text-sm">GitHub</span>
+                </a>
+                <a href="https://wa.me/5491158907910" target="_blank" rel="noopener" class="group flex items-center gap-2 hover:text-skyline transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17 2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-5 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm5-3H7V4h10v13z"/>
+                    </svg>
+                    <span class="text-sm">11 5890 7910</span>
                 </a>
             </div>
             </div>
@@ -379,9 +416,15 @@
         <footer class="py-6 px-6 text-center font-mono text-[11px] uppercase tracking-wider text-ink/50 bg-paper border-t border-blueprint/20">
             © 2026 Romina Castro — Hecho con HTML, CSS y JavaScript
         </footer>
-        
-        <script src="script.js"></script>
 
-        
+        <!-- VOLVER AL INICIO -->
+        <a href="#inicio" class="fixed bottom-6 right-6 z-40 flex items-center justify-center gap-2 px-4 py-3 bg-skyline text-ink rounded-full hover:bg-paper transition-colors shadow-lg font-mono text-sm uppercase tracking-wider">
+            <span>Subir</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 14l5-5 5 5z"/>
+            </svg>
+        </a>
+    
+        <script src="script.js"></script>
     </body>
 </html>
