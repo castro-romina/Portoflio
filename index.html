@@ -5,13 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio Castro Romina</title>
         <link rel="icon" type="image/png" href="./assets/icono/portafolio.png" />
-
-        <!-- Fuentes -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         
-        <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script>
@@ -42,7 +39,7 @@
         <header class="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur border-b border-blueprint/20">
             <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
                 <a href="#inicio" class="font-display font-semibold text-lg tracking-tight">
-                    Portfolio Castro Romina<span class="text-blueprint"></span>
+                    Portfolio Romina Castro<span class="text-blueprint"></span>
                 </a>
         
                 <ul class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider">
@@ -68,7 +65,7 @@
             </ul>
         </header>
       
-        <section id="inicio" class="section-marks relative pt-40 pb-24 px-6 overflow-hidden">
+        <section id="inicio" class="section-marks relative pt-40 pb-24 px-6 overflow-hidden bg-ink text-paper">
             <div class="max-w-3xl mx-auto text-center">
             
                 <div class="relative w-40 h-40 mx-auto mb-8">
@@ -80,35 +77,34 @@
                     />
                 </div>
             
-                <h1 class="font-display font-bold text-4xl md:text-5xl tracking-tight text-ink">
-                    Castro Romina
+                <h1 class="font-display font-bold text-4xl md:text-5xl tracking-tight text-white">
+                    Romina Castro
                 </h1>
-                <p class="font-display text-lg md:text-xl text-blueprint mt-3">
-                    Desarrolladora Web Fullstack · Estudiante de Licenciatura en Sistemas 
+                <p class="font-display text-lg md:text-xl text-paper mt-3">
+                    Estudiante de Licenciatura en Sistemas · Desarrolladora Web Fullstack 
                 </p>
-                <p class="mt-5 text-ink/70 leading-relaxed max-w-xl mx-auto">
-                    Soy estudiante de 2° año de la Licenciatura en Sistemas en la Universidad Nacional de Lanús (UNLa), 
-                    complementando mi formación con el programa Full Stack en Fundación Pescar.                                                                                                                                                                                                                       
-                    Me defino como alguien comprometida, responsable, adaptable, resiliente y con buena comunicación. Disfruto tanto del 
-                    trabajo en equipo como de los desafíos individuales.
+                <p class="mt-5 text-white/95 leading-relaxed max-w-xl mx-auto">
+                    Soy estudiante de 2° año de la Licenciatura en Sistemas en la Universidad Nacional de Lanús (UNLa), ademas complemente mi formacion con el programa Full Stack en Fundación Pescar y Educacion IT. 
+                    <br>
+                    Tengo conocimientos en metodologías agiles, me gusta el trabajo en equipo, soy una persona proactiva autodidacta, con capacidad de escucha activa y resolución de problemas.
                 </p>
 
                 <!-- Botones de navegacion rapida -->
                 <div class="flex flex-wrap items-center justify-center gap-3 mt-9">
-                    <a href="./assets/cv/CASTRO ROMINA - CV.pdf" target="_blank" rel="noopener"
-                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
-                        Ver CV
+                    <a href="./assets/cv/castro_romina_cv.pdf" target="_blank" rel="noopener"
+                        class="px-6 py-2.5 rounded-full bg-skyline text-ink font-mono text-xs uppercase tracking-wider hover:bg-paper transition-colors">
+                        Ver Currículum
                     </a>
                     <a href="#proyectos" rel="noopener"
-                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
+                        class="px-6 py-2.5 rounded-full bg-skyline text-ink font-mono text-xs uppercase tracking-wider hover:bg-paper transition-colors">
                         Proyectos
                     </a>
                     <a href="#habilidades " rel="noopener"
-                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors"> 
+                        class="px-6 py-2.5 rounded-full bg-skyline text-ink font-mono text-xs uppercase tracking-wider hover:bg-paper transition-colors"> 
                         Habilidades técnicas
                     </a>
                     <a href="#certificaciones" rel="noopener"
-                        class="px-6 py-2.5 rounded-full bg-blueprint text-white font-mono text-xs uppercase tracking-wider hover:bg-ink transition-colors">
+                        class="px-6 py-2.5 rounded-full bg-skyline text-ink font-mono text-xs uppercase tracking-wider hover:bg-paper transition-colors">
                         Certificaciones
                     </a>
                 </div>
@@ -116,9 +112,10 @@
         </section>
         
         <!-- HABILIDADES -->
-        <section id="habilidades" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink">
+        <section id="habilidades" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-skyline/30">
             <div class="max-w-4xl mx-auto">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Habilidades técnicas</p>
+                <p class="font-mono text-xs uppercase tracking-[0.2em] text-ink mb-2">Habilidades técnicas</p>
+                <h2 class="font-display font-bold text-3xl mb-10 text-ink">Mi stack tecnológico</h2>
             
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
                     <div class="skill-card">
@@ -127,6 +124,7 @@
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>HTML5</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>CSS3</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>JavaScript</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>TypeScript</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>ReactJS</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Tailwind CSS</li>
                         </ul>
@@ -136,7 +134,9 @@
                         <h3 class="skill-card-title">Backend</h3>
                         <ul class="space-y-2.5">
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Python</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Django</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>NodeJS</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Express</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>C ++</li>
                         </ul>
                     </div>
@@ -146,6 +146,7 @@
                         <ul class="space-y-2.5">
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>MongoDB</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>MySQL</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>PostgreSQL</li>
                         </ul>
                     </div>
             
@@ -155,80 +156,126 @@
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Git &amp; GitHub</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>VS Code</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Vercel</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Render</li>
+                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Jira</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Notion</li>
                             <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Trello</li>
-                            <li class="skill-item"><span class="skill-icon">&lt;/&gt;</span>Data Studio</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROYECTOS -->
-        <section id="proyectos" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-skyline/30">
+       <!-- PROYECTOS -->
+        <section id="proyectos" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink">
             <div class="max-w-5xl mx-auto">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Mis Proyectos</p>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <p class="font-mono text-xs uppercase tracking-[0.2em] text-skyline mb-2">Fig. 03 — Mis Proyectos</p>
+                <h2 class="font-display font-bold text-3xl mb-10 text-paper">Trabajo destacado</h2>
+ 
+                <div class="space-y-6">
             
                     <!-- MyPet -->
-                    <article class="project-card">
-                        <h3 class="font-display font-semibold text-lg mb-1.5">MyPet</h3>
-                        <p class="text-ink/60 text-sm leading-snug mb-3">
-                            Plataforma web para la gestión integral de la salud de mascotas en Buenos Aires. Conecta dueños con veterinarias, centraliza el historial clínico y permite reservar y pagar turnos online.
-                        </p>
-                        <div class="flex flex-wrap gap-1.5 mb-4">
-                            <span class="tech-tag">React 18</span>
-                            <span class="tech-tag">Vite</span>
-                            <span class="tech-tag">Tailwind</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">MercadoPago</span>
-                            <span class="tech-tag">Cloudinary</span>
-                            <span class="tech-tag">Google Maps API</span>
-                            <span class="tech-tag">Claude AI</span>
+                    <article class="flex gap-6 p-6 bg-skyline/10 border border-skyline/30 rounded-lg">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/logo-mypet.svg" alt="MyPet Logo" class="w-24 h-24 object-contain bg-white/10 rounded p-2" />
                         </div>
-                        <div class="flex flex-col gap-1">
-                            <a href="https://my-pet-sable.vercel.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
-                            <a href="https://github.com/proyecto-final-pescar/app-sistemas" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-display font-semibold text-xl text-paper mb-1">MyPet</h3>
+                                <p class="text-paper/80 text-sm leading-snug">
+                                    Plataforma web para la gestión integral de la salud de mascotas en Buenos Aires. Conecta dueños con veterinarias, centraliza el historial clínico, ver y buscar que veterinarias que atienden emergencias, cuenta con un foro de mascotas perdidas y permite reservar y pagar turnos online.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">React 18</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Node.js</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Express</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">PostgreSQL</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Tailwind</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://mypet.ar/" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver proyecto</a>
+                                <a href="https://github.com/proyecto-final-pescar/app-sistemas" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver repositorio</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MatchVol -->
+                    <article class="flex gap-6 p-6 bg-skyline/10 border border-skyline/30 rounded-lg">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/matchVol.jpeg" alt="MatchVol Logo" class="w-24 h-24 object-contain bg-white/10 rounded p-2" />
+                        </div>
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-display font-semibold text-xl text-paper mb-1">MatchVol (Sistema YFU)</h3>
+                                <p class="text-paper/80 text-sm leading-snug">
+                                    MatchVol conecta voluntarios con organizaciones que los necesitan. Los voluntarios arman un perfil con lo que saben hacer, qué idiomas hablan, qué les interesa. Las organizaciones suben sus proyectos y dicen qué necesitan. El sistema las cruza para encontrar matches que de verdad funcionan.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">React</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">TypeScript</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Vite</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Tailwind</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Node.js</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Express</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">PostgreSQL</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://sistem-yfu-xkb4.vercel.app/" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver proyecto</a>
+                                <a href="https://github.com/castro-romina/SistemYFU" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver repositorio</a>
+                            </div>
                         </div>
                     </article>
             
                     <!-- MatchJob -->
-                    <article class="project-card">
-                        <h3 class="font-display font-semibold text-lg mb-1.5">MatchJob</h3>
-                        <p class="text-ink/60 text-sm leading-snug mb-3">
-                            Conecta profesionales de oficios como electricistas y carpinteros con quienes necesitan sus servicios. Incluye login, búsqueda con filtros por ubicación y rubro, y valoración por estrellas.
-                        </p>
-                        <p class="demo-credentials mb-3">Demo: usuario@gmail.com · 12345</p>
-                        <div class="flex flex-wrap gap-1.5 mb-4">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                    <article class="flex gap-6 p-6 bg-skyline/10 border border-skyline/30 rounded-lg">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/logo.jpeg" alt="MatchJob Logo" class="w-24 h-24 object-contain bg-white/10 rounded p-2" />
                         </div>
-                        <div class="flex flex-col gap-1">
-                            <a href="https://matchjob-proyecto.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
-                            <a href="#" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-display font-semibold text-xl text-paper mb-1">MatchJob</h3>
+                                <p class="text-paper/80 text-sm leading-snug">
+                                    Conecta profesionales de oficios como electricistas y carpinteros con quienes necesitan sus servicios. Incluye login, búsqueda con filtros por ubicación y rubro, y valoración por estrellas.
+                                </p>
+                                 <span class="text-paper/60 text-xs mt-1 block">Demo: usuario@gmail.com · 12345</span>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">HTML</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">CSS</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">JavaScript</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://matchjob-proyecto.netlify.app/" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver proyecto</a>
+                                <a href="https://github.com/matchjob/matchjob" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver repositorio</a>
+                            </div>
                         </div>
                     </article>
             
                     <!-- Fintech -->
-                    <article class="project-card">
-                        <h3 class="font-display font-semibold text-lg mb-1.5">Fintech</h3>
-                        <p class="text-ink/60 text-sm leading-snug mb-3">
-                            Billetera virtual desarrollada como proyecto educativo para Educación IT. Permite registrar usuarios, gestionar cuentas y realizar depósitos y retiros desde el navegador, sin necesidad de backend.
-                        </p>
-                        <p class="demo-credentials mb-3">Admin: admin@wallet.com · admin123</p>
-                        <div class="flex flex-wrap gap-1.5 mb-4">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JS Vanilla</span>
-                            <span class="tech-tag">Vite</span>
+                    <article class="flex gap-6 p-6 bg-skyline/10 border border-skyline/30 rounded-lg">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/logo-fintech.svg" alt="Fintech Logo" class="w-24 h-24 object-contain bg-white/10 rounded p-2" />
                         </div>
-                        <div class="flex flex-col gap-1">
-                            <a href="https://fintech-eight-sigma.vercel.app/" target="_blank" rel="noopener" class="project-link">Ver proyecto ↗</a>
-                            <a href="https://github.com/castro-romina/Fintech.git" target="_blank" rel="noopener" class="project-link">Ver repositorio ↗</a>
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-display font-semibold text-xl text-paper mb-1">Fintech</h3>
+                                <p class="text-paper/80 text-sm leading-snug">
+                                    Billetera virtual desarrollada como proyecto educativo para Educación IT. Permite registrar usuarios, gestionar cuentas y realizar depósitos y retiros desde el navegador, sin necesidad de backend.
+                                </p>
+                                <span class="text-paper/60 text-xs mt-1 block">Demo: admin@wallet.com · admin123</span>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">HTML</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">CSS</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">JavaScript</span>
+                                <span class="text-xs bg-skyline/30 text-paper px-2 py-1 rounded">Vite</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://fintech-eight-sigma.vercel.app/" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver proyecto</a>
+                                <a href="https://github.com/castro-romina/Fintech" target="_blank" rel="noopener" class="px-4 py-2 bg-skyline text-ink text-xs font-mono uppercase tracking-wider rounded hover:bg-paper transition-colors">Ver repositorio</a>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -236,47 +283,47 @@
         </section>
         
         <!-- CERTIFICACIONES -->
-        <section id="certificaciones" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-blueprint/15">
+        <section id="certificaciones" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-skyline/30">
             <div class="max-w-4xl mx-auto">
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-blueprint mb-2">Fig. 04 — Certificaciones</p>
-            <h2 class="font-display font-bold text-3xl mb-10">Formación complementaria</h2>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-ink mb-2">Fig. 04 — Certificaciones</p>
+            <h2 class="font-display font-bold text-3xl mb-10 text-ink">Formación complementaria</h2>
         
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">Frontend: HTML, CSS y JavaScript</h3>
                 <p class="text-ink/60 text-sm font-mono mb-4">Fundacion Mediapila · 2025 </p>
-                <a href="assets/certificados/cert-frontend.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <a href="assets/certificados/cert-frontend.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">HTML</h3>
-                <p class="text-ink/60 text-sm font-mono mb-4">Educación IT · 2026
-                <a href="assets/certificados/cert-html.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <p class="text-ink/60 text-sm font-mono mb-4">Educación IT · 2026</p>
+                <a href="assets/certificados/cert-html.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">Git y GitHub</h3>
                 <p class="text-ink/60 text-sm font-mono mb-4">Educación IT · 2026</p>
-                <a href="assets/certificados/cert-git.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <a href="assets/certificados/cert-git.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">Python</h3>
                 <p class="text-ink/60 text-sm font-mono mb-4">Educación IT · 2026</p>
-                <a href="assets/certificados/cert-python.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <a href="assets/certificados/cert-python.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">Python Avanzado</h3>
                 <p class="text-ink/60 text-sm font-mono mb-4">Educación IT · 2026</p>
-                <a href="assets/certificados/cert-python-avanzado.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <a href="assets/certificados/cert-python-avanzado.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
                 <article class="cert-card">
                 <h3 class="font-display font-semibold text-lg mb-1">Nombre del curso</h3>
                 <p class="text-ink/60 text-sm font-mono mb-4">Institución · 2026</p>
-                <a href="assets/certificados/cert-6.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado ↗</a>
+                <a href="assets/certificados/cert-6.pdf" target="_blank" rel="noopener" class="cert-btn">Ver certificado</a>
                 </article>
         
             </div>
@@ -287,7 +334,7 @@
         <!-- CONTACTO -->
         <section id="contacto" class="section-marks relative py-24 px-6 border-t border-blueprint/20 bg-ink text-paper">
             <div class="max-w-3xl mx-auto text-center">
-            <p class="font-mono text-ms uppercase tracking-[0.2em] text-skyline mb-2">Mi contacto</p>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-skyline mb-2">Fig. 05 — Mi contacto</p>
         
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="mailto:castroromina890@gmail.com" class="contact-link">
